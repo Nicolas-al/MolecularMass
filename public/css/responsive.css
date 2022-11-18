@@ -1,0 +1,55 @@
+@media only screen and (max-width: 320px){
+    /*style petits smartphones en voie de disparition*/
+    #logo_block img{
+        height: 135px;
+        width: 230px;
+    }
+
+    #search_block {
+        width: 80%;
+    }
+
+    #error_formula{
+        width: 80%;
+    }
+
+    thead th{
+        vertical-align: middle;
+    }
+
+    footer{
+        flex-direction: column-reverse;
+        padding-left: 0;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 799px){
+    /*style smartphones et petites tablettes en portrait*/
+    #logo_block img{
+        height: 166px;
+        width: 283px;
+    }
+
+    #search_block {
+        width: 80%;
+    }
+
+    #error_formula{
+        width: 80%;
+    }
+
+    thead th{
+        vertical-align: middle;
+    }
+
+    footer{
+        flex-direction: column-reverse;
+        padding-left: 0;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 966px){
+    /*style petites-moyennes tablettes */
+    }

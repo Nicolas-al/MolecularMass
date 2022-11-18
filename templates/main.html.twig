@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div class="container">
+    <div id="logo_block">
+        <img src="{{ asset('images/white-logo.svg')}}" alt="logo molecular mass">
+    </div>
+    <p class="explanation mt-4 text-center"><span>E</span>nter your chemical formula in the field and you will get its molecular mass.</p>
+    <div id="error_formula">
+        <i class="fa-sharp fa-solid fa-xmark"></i>
+        <p>There is an error in formula</p>
+    </div>
+    <div id="search_block" class="mb-4">
+        <input type="search" name="searchMolecularMass" placeholder="Formule chimique">
+        <button class="btn">Calculate</button>
+    </div>
+    <div id="result_block" class="table-responsive-sm">
+        <p>Molecular Mass : <strong></strong></p>
+        <table class="table table-borderless">
+            <thead>
+                <tr>
+                    <th scope="col">Atom</th>
+                    <th scope="col">Atomic mass (g/mol)</th>
+                    <th scope="col">Number of atoms</th>
+                    <th scope="col">Subtotal mass (g/mol)</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}
