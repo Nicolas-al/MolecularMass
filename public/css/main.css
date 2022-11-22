@@ -10,6 +10,9 @@ body {
     min-height: 100vh;
     height: 100%;
 }
+#cicles svg{
+    filter: blur(20px);
+}
 .container{
     height: -webkit-fit-content;;
 }
@@ -75,6 +78,7 @@ input:focus{
     outline: none;
 }
 #result_block{
+    width: 50%;
     margin: auto;
     background-color: white;
     color: black;
@@ -86,15 +90,21 @@ input:focus{
 }
 #result_block p{
     margin-bottom: 0px;
-    background: rgb(237, 237, 237);
+    background: rgb(17, 17, 68) !important;
     padding: 10px 10px;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
+    color: white;
+    border: 1px solid rgb(41, 41, 94);
 }
 #result_block table{
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
     border: none;
+}
+#result_block thead{
+    color: rgb(71, 71, 71);
+    font-family: 'Bad Script', cursive;
 }
 #error_formula{
     background: white;

@@ -1,20 +1,26 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+
 <div class="container">
-    <div id="logo_block">
+    <div id="cicles" class="position-relative">
+        <svg viewbox="0 0 150 100" xmlns="http://www.w3.org/2000/svg" class="position-absolute">
+            <circle cx="75" cy="45" r="35" fill="rgb(41, 41, 94)"/>
+        </svg>
+    </div>
+    <div id="logo_block" class="position-relative">
         <img src="{{ asset('images/white-logo.svg')}}" alt="logo molecular mass">
     </div>
-    <p class="explanation mt-4 text-center"><span>E</span>nter your chemical formula in the field and you will get its molecular mass.</p>
-    <div id="error_formula">
+    <p class="explanation mt-4 text-center position-relative"><span>E</span>nter your chemical formula in the field and you will get its molecular mass.</p>
+    <div id="error_formula" class="position-relative">
         <i class="fa-sharp fa-solid fa-xmark"></i>
         <p>There is an error in formula</p>
     </div>
-    <div id="search_block" class="mb-4">
+    <div id="search_block" class="mb-4 position-relative">
         <input type="search" name="searchMolecularMass" placeholder="Formule chimique">
         <button class="btn">Calculate</button>
     </div>
-    <div id="result_block" class="table-responsive-sm">
+    <div id="result_block" class="table-responsive-sm position-relative">
         <p>Molecular Mass : <strong></strong></p>
         <table class="table table-borderless">
             <thead>

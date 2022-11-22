@@ -3,8 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <script src="https://kit.fontawesome.com/daaf48b856.js" crossorigin="anonymous"></script>       
+        <title>{% block title %}MolecularMass{% endblock %}</title>
+        <link rel="shortcut icon" type="image/svg" href="{{ asset('images/white-logo-letter.png') }}">
+        <script src="https://kit.fontawesome.com/daaf48b856.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">       
         {% block stylesheets %}
             <link rel="stylesheet" href="{{ asset('/css/main.css') }}">
             <link rel="stylesheet" href="{{ asset('/css/responsive.css') }}">
